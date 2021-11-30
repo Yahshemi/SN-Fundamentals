@@ -55,7 +55,7 @@ Access to Now Support (HI) is typically reserved to a few team members at each s
 <!-- End of Now platform overview. -->
 
 
-## Now Platform interfaces
+###### Now Platform interfaces
 
 There are three ways to interact with the Now Platform. Each of the three approaches provides a different interface targeting different devices and purposes. All of these interfaces access the same single system of record and common data model of the Now Platform. The three Now Platform interfaces are:
 
@@ -65,7 +65,7 @@ There are three ways to interact with the Now Platform. Each of the three approa
 
 - Service Portal
 
-###### Now Platform user interface
+###### Now Platform UI
 
 The Now Platform user interface is the primary way to interact with the applications and information in a ServiceNow instance. Notable Now Platform user interface features include real-time form updates, user presence, enhanced activity streams, and an application navigator designed with tabs for favorites and history.
 
