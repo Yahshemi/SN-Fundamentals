@@ -4,7 +4,7 @@
 
 ## Table of Contents
 * [Now Platform overview](#now-platform-overview)
-* [Technologies Used](#technologies-used)
+* [Now Platform User Interface](#now-platform-user-interface)
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
@@ -178,6 +178,9 @@ To login to ServiceNow, navigate to the URL of your ServiceNow instance in your 
 
 
 <!-- End of Now platform interfaces. -->
+
+## Now Platform User Interface
+
 
 ## Features
 List the ready features here:
