@@ -126,6 +126,57 @@ Both expert developers and beginners with the proper permissions can configure p
 
 Want to learn more about using the ServiceNow Service Portal to create engaging experiences? Check out the following resources to get started today.
 
+###### Define the components of role-based access
+
+The Now Platform utilizes role-based access to ensure people have the information and workflows they need to fulfill their roles – no more, no less! It is crucial to protect sensitive data. Realize not every member of your organization needs access to all information at all times. 
+
+To understand how role-based access works in the Now Platform, it is important to first define its components. Expand the sections below to identify the purpose of each component involved in the implementation of role-based access for the Now Platform.
+
+- User
+A user is an individual that has been granted access to your ServiceNow instance.
+
+- Group
+A group is a set of users who share a common purpose. Members of groups perform similar tasks or need access to similar information for various purposes, such as approving change requests, resolving incidents, receiving email notifications, or administering the Service Catalog. Users working in ServiceNow are typically assigned to one or more groups. 
+
+- Role
+A role is a collection of permissions in the Now Platform. These permissions define which applications a user or group will and will not be able to access within the system and which actions the user will be able to take on records within the applications. A role can be assigned to a single user or a group of users. Users and groups can be assigned more than one role.
+
+
+
+A role can contain other roles. In the example below, the catalog_admin role contains the catalog and user_criteria_admin roles. If a user or group was assigned the catalog_admin role, they would be granted the permissions of all three roles.
+
+
+
+Generally, when you think about your "role" in the workplace, you are thinking about your specific position or title, such as project manager, developer, or operations manager.  It is the part you play and job you perform every day. For the Now Platform, the word "role" defines your capabilities in the application. Therefore, it is important to distinguish between the different definitions.
+
+
+- Base System Roles
+
+he Now Platform includes many delivered base system roles, some are described below. For a complete list of base system roles, refer to ServiceNow product documentation for "base system roles". LEARN MORE >
+
+
+
+- System Administrator (admin): Provides almost all roles and access to all Now Platform features, functions, and data (with some exceptions such as HR and Security Operations constraints). Grant this privilege carefully. Users holding the admin role can create and modify user roles, as well as impersonate other users. 
+
+- Specialized Administrator (example: catalog_admin): Provides users with specialized administrator roles to manage specific functions or applications, such as knowledge base, human resources, reports, and web services. 
+
+- Approvers (approver_user): Allows users to view or modify approval records directed to them.
+- ITIL (itil): Can perform standard actions for an ITIL helpdesk technician. Can open, update, close incidents, problems, changes, configuration management items. By default, only users with the itil role can have tasks assigned to them.
+
+###### Assign role-based access
+
+Once a collection of permissions has been defined as a role, it can be assigned to a group or user. All groups or users assigned to that role are granted the access allowed by the role permissions.  
+
+
+###### GOOD PRACTICE: Rather than assigning roles to individual users, add the users to a group and assign the role to the group. This method of role assignment simplifies maintenance when responsibilities within the organization change. A user can be removed from one group and added to a new group, inheriting all the permissions needed to the perform their new duties. 
+
+###### User authentication
+
+When you login to ServiceNow, user authentication is the first level of security applied. It validates the identity of a user who accesses an instance. Then it authorizes the user to access features that match the user's roles or job function.
+
+To login to ServiceNow, navigate to the URL of your ServiceNow instance in your web browser. On the login page, enter your ServiceNow User name and Password, and then select Login.
+
+
 <!-- End of Now platform interfaces. -->
 
 ## Features
