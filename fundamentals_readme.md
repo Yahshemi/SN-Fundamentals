@@ -5,15 +5,10 @@
 ## Table of Contents
 * [Now Platform overview](#now-platform-overview)
 * [Now Platform User Interface](#now-platform-user-interface)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
+* [Get started with lists and filters](#getting-started-with-lists-and-filters)
+* [Forms Overview](#forms-overview)
+* [Task Overview](#task-overview)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## Now Platform overview
@@ -181,61 +176,88 @@ To login to ServiceNow, navigate to the URL of your ServiceNow instance in your 
 
 ## Now Platform User Interface
 
+###### Get started with the Now Platform user interface
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+Identify the importance of the Now Platform user interface
 
+Are you ready to start getting your hands on the Now Platform? Fasten your seatbelts and adjust your rear view mirror. David and Kristen are here to help begin your road trip.
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+Select play to drive home the importance of the features provided by the Now Platform user interface.
 
+Find your way around the Now Platform user interface
 
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+Once you login to the ServiceNow Now Platform user interface with your user name and password, you are ready to begin. Start by taking a look around the main screen elements and functionality available in the Now Platform user interface. 
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Select play to get acclimated to your new control center. Use the Fullscreen option on the video toolbar for better viewing.
 
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+###### Get started with the application navigator
 
-`write-your-code-here`
+Now that you have a feel for the Now Platform user interface, dive in a little deeper. Take a look at how the application navigator helps you find your way around ServiceNow. Just think of the application navigator as the steering wheel of your car.
+
+Select play to learn how to chart your course with the application navigator. Use the Fullscreen option on the video toolbar for better viewing
+
+## Get started with lists and filters
+
+###### Identify the importance of lists and filters
+
+How do you get the information you need quickly using ServiceNow? Your instructors, David and Kristen, are here to shed some light on how lists and filters can transform the way you work and save time. 
+
+Select play to find out how lists and filters give you the power to sort, analyze, and view information in the Now Platform. You got this!
+
+###### Explore the power of lists and filters
+
+Lists and filters help manage the records in a ServiceNow table. This includes task-based records that track the flow of work to completion, such as incidents.
+
+Ready to see lists and filters in action? Select play to explore the power of lists and filters in the Now Platform. Use the Fullscreen option on the video toolbar for better viewing.
+
+###### Natural Language Query (NLQ)
+
+The Natural Language Query allows you to filter the list data using natural language, instead of the condition builder.
+As you type, auto-suggestions for text will appear so you can click the suggestion before typing the complete filter.
+Select Ask, and you will see the filter applied to the breadcrumb.
+
+The Natural Language Query can be activated by installing the Natural Language Query (com.snc.nlq) and Predictive Intelligence (com.glide.platform_ml) plugins. Administrators will be able to turn this feature off by using the list control. Each NLQ result will be contained to the table the list is populated with data (ex. Incident). 
+
+To turn this feature off, navigate to sys_properties.list, search for *nlq under Name. For com.snc.listv2.nlq.lists.append_query, set the Value to false. 
+
+To learn more about the NLQ and activation information, navigate to ServiceNow Product Documentation: Natural Language Query
 
 
-## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+## Forms Overview
+
+Welcome to the Forms Overview! In addition to learning how to view and edit records in forms, this overview will provide information on how forms can be configured to target different groups. Upon completion of this course you will be able to:
+
+- Demonstrate how forms are used to capture information of one record on a table
+- Identify the components of the form user interface
+- Adapt forms to your needs using form personalization 
+- Create forms targeting different users or groups using form designer
+
+###### Get started with forms
+
+###### Identify the importance of forms
+
+How do you capture and display the information of a ServiceNow record? With forms, of course. Hear a brief word from your instructors, David and Kristen, on how you can get involved in the development effort configuring forms, no matter your project role. 
+
+Ready to start getting your awesome idea off the ground? Select play for the following video to get inspired and make it happen.
+
+###### Begin with the basics of using forms
+
+Want to learn more about personalizing, managing, and saving important information on your instance? You're in the right place! Pay close attention on how you can create, view, or modify specific records in data tables using forms.
+
+Select play for detailed demonstrations on using form features and functions in the Now Platform. Use the Fullscreen option on the video toolbar for better viewing.
+
+###### Form layout and design
+
+###### Configure forms for different audiences
 
 
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+## Task overview
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
+###### Identify the power of Task Management
 
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
 
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
