@@ -381,6 +381,31 @@ Flexible Visual Task Boards are also based on specified fields from tasks. For e
 Freeform Visual Task Boards are just what its name implies, freeform. Since it is not based on a record list, you can add task records and configure it however you want. The default lanes are the same as a Flexible board, but since it was not built from a record list, the lanes do not have any cards in them yet. You would add the cards yourself.
 
 
+###### Reporting Overview
+
+Using dashboards and reports
+
+Create reports using the Report Designer
+
+You know the information needed in your reports better than anyone! Ready to learn how you can build those reports yourself? 
+
+Select play to demonstrate how you can:
+
+Use the Report Designer to build reports
+
+- 11Share and schedule your reports with others
+
+- Generate reports from ServiceNow lists
+
+- Add your reports to a ServiceNow responsive dashboard
+
+When you report on a table (for example, Incident or Problem), information about the current state of platform data displays
+
+Create management dashboards, report on KPIs and metrics, and increase quality and reduce the costs of service delivery using Performance Analytics.
+
+Performance Analytics (PA) allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement. With PA, users can learn to identify the metrics that matter for business objectives, using out-of-the-box ServiceNow capabilities and content to address measurement and reporting scenarios. 
+
+Unlike running a report in the Platform, developing and using an analytics solution is an ongoing and iterative process that users can improve over time. Review performance indicators, monitor metrics, and make improvements to organizational decision-making. 
 
 
 
