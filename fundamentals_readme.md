@@ -254,7 +254,145 @@ Select play for detailed demonstrations on using form features and functions in 
 
 ## Task overview
 
-###### Identify the power of Task Management
+###### What is a ServiceNow task?
+
+A task is any record that can be assigned or completed by a user in ServiceNow. Users create tasks and are notified as the task moves along a workflow. Tasks can be assigned to specific users or user groups.
+
+###### Why use tasks?
+
+The power (and value) of tasks are that they are repeatable processes across the enterprise. By defining tasks, users with similar issues (for example, no network access) can have their issue automatically assigned to the appropriate user and assignment group. This results in quicker resolution times and minimizes the possibility of human error.
+
+Not convinced yet? Select each numbered step below to explore a normal workflow in which the task is an Incident (no network access) and the users are Fred and Donna.
+
+###### Time to dive a little deeper
+
+The Task table is one of ServiceNow’s core tables. It provides a series of standard fields available to other tables that define specific types of tasks (Incident, Problem, Change Request, etc.). In technical terms, these other tables extend the Task table.
+
+- Approvals can be generated to a list of Approvers, either manually or automatically, according to approval rules. Approvals can be incorporated into workflows or can stand alone.
+
+- Assignment rules can automatically assign tasks to users or groups, ensuring that tasks are handled by the most appropriate team members.
+
+- Service Level Agreements can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time.
+
+- Inactivity monitors ensure that tasks do not fall by the wayside by notifying users when tasks have been untouched for a predefined period of time.
+
+- Workflow processes are specified by administrators and apply to tasks that meet certain conditions. After a task is created that meets the conditions, the workflow applies an automated process to the task.
+
+###### Task assignment
+
+There are four steps to assign tasks:
+
+- Add users to groups
+- Apply roles to groups
+- Assign tasks to groups
+- Assign tasks to users
+
+###### Assignment rules
+
+Assignment rules are used to automatically set a value in the Assigned to and/or Assignment group fields of a task record.
+
+You can view assignment rules by navigating to the System Policy > Rules > Assignment module.
+
+Create an assignment rule
+
+Creating an assignment rule is a fairly straightforward process that can be done in a few minutes.
+
+Select each numbered step below for more information on how to create an assignment rule.
+
+###### Assignment rule criteria
+
+An assignment rule must meet the following criteria to execute:
+
+- The Task record has been created (or modified) and then saved on a form.  In the example you walked through above, a new Incident was created. Therefore, this criteria was met.
+
+- The Task record must be unassigned (no values in the Assigned to or Assignment group fields). In the example above, the Assignment to and Assigned group fields were initially blank since a new record was created.
+
+- The assignment rule is the first rule that matches the specified table and conditions. If more than one assignment rule matches the conditions, only the rule with the lowest Order value runs. Though not shown in the example above, the assignment rule had the lowest order value (100) for a Hardware Category Incident.
+
+Additionally, assignment rules can be scripted, giving even more flexibility on the trigger and outcome.
+
+###### Assignment lookup rules
+
+Assignment lookup rules are another type of assignment rule. These rules only apply to incident records. They have fewer options than other assignment rules that can be applied to any task. They can be created by navigating to System Policy > Rules > Assignment Lookup Rules. 
+
+If you look closely at Assignment Data Lookups, you can see that both Assignment Rules are displayed and Order values are 100. Even though the Order values are identical, this is not a problem because their Category and Subcategory conditions are different (Network - VPN vs Hardware).
+
+###### Predictive Intelligence
+
+Predictive Intelligence uses machine-learning algorithms to determine field values during record creation. Existing data records are required to "train" machine-learning to make effective decisions.
+
+This results in improved efficiency and quality and reduces cost by:
+
+- Reducing the amount of time spent resolving tasks
+
+- Reducing the number of interactions required to resolve tasks
+
+- Reducing the number of potential human errors that could occur while categorizing and assigning work
+
+###### Visual Task Boards
+
+Use Visual Task Boards to collaborate on tasks in real-time with group members, create personal to-do lists, and more. 
+
+Visual Task Boards allow you to:
+
+
+- Manage your tasks through a visual, drag-and-drop interface
+
+- Identify process bottlenecks at a glance
+
+- Track activity to view updates all in one place
+
+There are three types of Visual Task Boards: Guided, Flexible, and Freeform.
+
+- Guided boards can be created from a list and use the values of a specified field (e.g. State) as lanes. Tasks in the list are updated when cards are edited or change lanes on the Visual Task Board.
+
+- Flexible boards are also created from a list, but lane changes do not update underlying task data.
+
+- Freeform boards can act as your personal organizer to manage individual tasks of any kind. Lane changes do not update underlying task data.
+
+Elements of a Visual Task Board
+
+Visual Task Boards are displayed graphically as lanes and cards, and provide a landing page to view and organize work in ServiceNow. While Visual Task Boards may vary in their exact configuration, there are four elements common to each type.
+
+- Taskboard Tools
+
+- Quick Panel
+
+- Lanes
+
+- Cards
+
+Select each marker below to learn more about each Visual Task Board element.
+
+###### Taskboard tools
+
+Taskboard tools are a critical part of a Visual Task Board. Take the time now to get familiar with the functionality they provided. 
+
+###### - Guided Visual Task Boards
+
+The lanes of Guided Visual Task Boards are based on the predefined values of a specific reference or choice field for a task. For example, the Guided board below was based on the Assigned To field for change request tasks. Therefore, its lanes correspond to specific users assigned to the change requests. Records in that list, which appear as cards, are modified when you edit cards or change lanes in a Guided board.
+
+###### - Flexible Visual Task Boards
+
+Flexible Visual Task Boards are also based on specified fields from tasks. For example, the Flexible board below was based on the Number field for incidents. However, since Number is not a reference or choice field with predefined values, a Flexible board is created with the default lanes shown here. Records in the list, which appear here by default as cards in the To Do lane, are not modified when you edit cards or change lanes in a Flexible board.
+
+###### - Freeform Visual Task Board
+
+Freeform Visual Task Boards are just what its name implies, freeform. Since it is not based on a record list, you can add task records and configure it however you want. The default lanes are the same as a Flexible board, but since it was not built from a record list, the lanes do not have any cards in them yet. You would add the cards yourself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
