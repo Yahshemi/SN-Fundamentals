@@ -406,12 +406,59 @@ Create management dashboards, report on KPIs and metrics, and increase quality a
 Performance Analytics (PA) allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement. With PA, users can learn to identify the metrics that matter for business objectives, using out-of-the-box ServiceNow capabilities and content to address measurement and reporting scenarios. 
 
 Unlike running a report in the Platform, developing and using an analytics solution is an ongoing and iterative process that users can improve over time. Review performance indicators, monitor metrics, and make improvements to organizational decision-making. 
+    
+- Widget: Saved view of indicator or breakdown
 
 
 
+- Tables: Indicator Source - calculates scores
 
 
 
+- Data Collector: Recurring jobs taking data snapshots
+
+
+
+ - Dashboard: Custom arrangement of widgets
+
+
+
+###### Knowledge overview
+
+The value of Knowledge Management increases as users interact with it. Features such as rating content and submitting alternative solutions help others trying to solve similar challenges track down answers quickly.
+
+Select play on the video below to discover the many ways users interact with knowledge articles to result in more valuable, targeted content. Use the Fullscreen option on the video toolbar for better viewing.
+
+
+###### Identify the information to create a knowledge article
+
+A knowledge article is a record in a knowledge base that provides information to knowledge consumers. Common examples of knowledge articles include policies, self-help tips, troubleshooting, and resolution steps. Groups like Human Resources often use knowledge articles to share information like company policies or benefits information. 
+
+The following  options can be used to populate your knowledge base with knowledge articles:
+
+- Create articles - Create articles using templates, and/or knowledge blocks directly in ServiceNow
+
+- Create articles from cases or incidents - Allow agents and resolvers to quickly create and save knowledge to share with other users from cases in Customer Service Management applications or incidents in IT Service Management applications
+
+- Import articles - Import Microsoft Word files into a knowledge base
+
+- Integrate - Integrate to an existing, WebDAV (Web Distributed Authoring and Versioning) compliant knowledge source outside of ServiceNow
+
+
+###### Create articles from cases or incidents
+
+If Knowledge-Centered Service (KCS) is used in your organization, agents and resolvers can create knowledge articles directly from cases or incidents. Using this approach makes knowledge a direct result of the resolution activities, instead of requiring a separate initiative.
+
+Want to find out more information about using KCS with ServiceNow and creating knowledge articles from cases or incidents? Check out the product documentation provided below.
+
+###### Import articles
+
+Knowledge authors have the ability to import Microsoft Word documents directly into a knowledge base, select a category (if applicable), and determine whether they are ready to trigger the Publish workflow for the new articles. 
+
+
+###### Integrate
+
+ServiceNow also has the capability to integrate with WebDAV compliant knowledge tools, such as Sharepoint. Integrating with Sharepoint will allow documents within Sharepoint (or other WebDAV compliant sources) to appear in search results in ServiceNow.
 
 
 
