@@ -574,6 +574,21 @@ The example below begins with the Incident record Assignment group field. Then d
 
 ## Virtual Agent overview
 
+## What is the Service Now Infrastructure
+
+-  Tables: data structures which contains records.
+-  Records: Data stored on tables, that contains fields.
+-  Fields: Individual pieces of data stored in a record 
+-  Dictionary: Defines every table and field in the system
+
+###### Table relationship
+
+- One to Many
+- Many to Many
+- Database Views
+- Extensions
+
+-  Schema Map: provides a graphical representation of othe tables related to specific.
 
 ## Contact
 Created by [@Yahshemi](https://github.com/Yahshemi/) - feel free to contact me!
