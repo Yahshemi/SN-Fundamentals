@@ -9,7 +9,8 @@
 * [Forms Overview](#forms-overview)
 * [Task Overview](#task-overview)
 * [Contact](#contact)
-
+* [Flow Designer overview](#flow-designer-overview)
+* [Virtual Agent overview](#virtual-agent-overview)
 
 ## Now Platform overview
 
@@ -463,10 +464,115 @@ ServiceNow also has the capability to integrate with WebDAV compliant knowledge 
 
 
 
+## Flow Designer overview
+
+###### What is Flow Designer?
+
+Flow Designer is a non-technical interface for building and enabling process automation capabilities, known as flows. Flows automate business logic for a particular application or process such as approvals, tasks, notifications, and record operations. Flow Designer helps you build time-saving applications quicker.
+
+###### When is Flow Designer used?
+
+Flow Designer is a powerful tool, but it may not be suitable for all of your business needs. Before you learn more about it, select the tabs below to identify when to use and not to use Flow Designer.
+
+Do use
+
+- To orchestrate business processes across services with little technical user knowledge
+- To reduce technical debt; meaning reduce scripting to simplify upgrades and deployments
+- To integrate with 3rd party systems
+
+Do not use
+
+- Existing logic already developed using the ServiceNow workflow editor
+- ServiceNow Instance is running Jakarta or prior
+
+Real World use case
+
+- Project manager has tasks automatically created and added to a Visual Task Board when a specific record is created
+- Customer Service develops a flow to communicate incident resolution through the end-user support channel
+- Change Manager creates an outage record and links it to an incident when the primary email server goes offline
+
+###### How is Flow Designer accessed?
+
+Since Flow Designer is separate from the Now Platform user interface, it opens in a different browser tab. On the Flow Designer landing page, tabs at the top list the existing flows, subflows, actions, executions, and help menus. You can create new flows, subflows, and actions using the + New button. To open a flow, select its Name. 
+
+For this example, the VTB Sample Flow will be opened. When an incident is created with a Priority of 1-Critical, this flow creates a new freeform Visual Task Board and adds the incident as a card within the To Do lane. As you walk through this example, you will explore how the flow works. 
+
+Each flow consists of a trigger and one or more actions. Select each of the three markers below for a definition of Flow Designer triggers and actions.
+
+To open (and close) the Flow Designer help panel, select the question mark icon in the main header.  The help panel offers information about working with data and spokes, building actions and flows, and guided tours.
+
+Next to the name for any action in the flow, select the Open help panel icon (?).   
+
+###### Process Automation Design
+
+With the Process Automation Designer on the Now Platform®, process owners are able to author cross-enterprise workflows within a single, unified process. Guide your end users and help them focus on tasks information that matters. 
+
+The Process Automation Designer allows you to organize content built in Flow Designer and unify cross-enterprise processes. Benefits of using the Process Automation Designer include: 
+
+- Connecting multiple flows and actions
+
+- Guiding end users to complete a process in a task-oriented interface
+
+- Consolidating separate business processes across your organization
+
+- Defining a consistent record lifecycle from beginning to end
+
+- Passing data between activities and stages of business processes
+
+- Specifying the conditions and the order for activities and stages
+
+- Visualizing and managing activities and stages in a Kanban-style board
+
+NOTE: Familiarize yourself with any features that your business uses to automate operations on the Now Platform® (Flow Designer, business rules, and workflows). Doing so can help you avoid creating any conflicting logic in your processes. 
+
+###### Flow Designer triggers
+As previously mentioned, a trigger starts a flow when the conditions of the trigger are met. Triggers can be record-based, schedule-based, or application-based.
+
+Trigger condition
+
+Specific conditions can be set to identify when a flow should be instantiated by the trigger. The VTB Sample Flow example, uses a record-based trigger. It initiates the flow when a new Incident record is created with a Priority of 1-Critical.
+
+Scroll through examples of schedule-based and application-based triggers below.  Take note of the different information specified for the three types of triggers (record, schedule, and application-based). 
+
+Flow Designer actions
+
+Actions are operations executed by Flow Designer, such as looking up a record, updating a field value, requesting an approval, or logging a value.
+
+- Ask and Approval
+Create approvals on any record, including rules for an approval, rejection, or cancellation, in addition to specifying a Due Date
+
+- Create Record
+Create a record on any table with configurable fields and field values
+
+- Delete Record
+Delete a record on any table
+
+- Look up a record
+Look up a single record on any table, confirming whether or not it exists. You can use the information from the record in subsequent actions within the flow. The record will be available for selection in the Data panel on the far right of the Flow Designer layout.
+
+-  Look up Records
+Who needs records when you have a band! You found another ServiceNow FLASHBACK!
+
+This one dates back to 2016 when the ServiceNow company band, Zboot, played the Belly Up in Solana Beach, California. One of the early ServiceNow buildings even had a rehearsal space down in the basement for the band to jam. These days, you can groove with Zboot at Knowledge. They are always a big hit with the crowd.
+
+You never know what you will find here on Now Learning. So keep hunting for more ServiceNow FLASHBACKS!
+
+Pass data between actions
+
+When designing a flow, you can use the results of an action as inputs for other flows, actions, or subflows. Use the sequence value shown in the corresponding section of the Data panel (Trigger, 1, 2, 3, etc.) to ensure you are using the correct data pill as an input value. 
+
+Records shown in the Data panel can be expanded to show or select their corresponding fields. In the example below, the Incident Record in the Data panel can be expanded to select any of its fields for use in an action.
+
+When a flow runs an action, it generates the data pill runtime value, which remains the same for the duration of the flow. For example, a data pill for [Trigger->Incident Record] always contains the incident record values from when the flow started.
+
+
+When using the Data Pill Picker icon, use the arrow keys to dot-walk to fields in other tables. 
+
+The example below begins with the Incident record Assignment group field. Then dot-walks to select the Assignment group Name from the Group table.
 
 
 
-
+## Virtual Agent overview
 
 
 ## Contact
