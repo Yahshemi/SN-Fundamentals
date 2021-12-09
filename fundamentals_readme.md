@@ -697,9 +697,9 @@ __Custom__ tables are created by you
 
 ##### To generate a schema map
 
-1). Navigate to __System Definition > Tables & Columns__. 
-2). In the Table name pane, __select a table__.
-3). Select __Schema map__. The schema map for the selected table opens in a seperate tab or window. 
+-  Navigate to __System Definition > Tables & Columns__. 
+-  In the Table name pane, __select a table__.
+-  Select __Schema map__. The schema map for the selected table opens in a seperate tab or window. 
 
 
 #### Overall Scenario for Course Activity
