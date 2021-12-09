@@ -9,7 +9,6 @@
 * [Forms Overview](#forms-overview)
 * [Task Overview](#task-overview)
 * [Flow Designer overview](#flow-designer-overview)
-* [Virtual Agent overview](#virtual-agent-overview)
 * [Content For Systems Administrators and Developers](#content-for-systems-administrators-and-developers)
 * * [Data Schema Overview](#data-schema-overview)
 * [Contact](#contact)
@@ -574,26 +573,6 @@ When using the Data Pill Picker icon, use the arrow keys to dot-walk to fields i
 The example below begins with the Incident record Assignment group field. Then dot-walks to select the Assignment group Name from the Group table.
 
 
-
-## Virtual Agent overview
-
-## What is the Service Now Infrastructure
-
--  Tables: data structures which contains records.
--  Records: Data stored on tables, that contains fields.
--  Fields: Individual pieces of data stored in a record 
--  Dictionary: Defines every table and field in the system
-
-###### Table relationship
-
-- One to Many
-- Many to Many
-- Database Views
-- Extensions
-
--  Schema Map: provides a graphical representation of othe tables related to specific.
-
-
 ## Content For Systems Administrators and Developers
 
 - Service Now Implementer: Responsible for getting the platform, application, or feature into production.
@@ -604,7 +583,7 @@ The example below begins with the Incident record Assignment group field. Then d
 
 In some organizations you may wear all hats.
 
-###### Course Overview
+### Course Overview
 
 - Data Schema Overview
 
@@ -628,6 +607,80 @@ In some organizations you may wear all hats.
 ### Data Schema Overview
 
 #### Tables and Fields
+
+##### What is the Service Now Infrastructure
+
+-  Tables: data structures which contains records.
+-  Records: Data stored on tables, that contains fields.
+-  Fields: Individual pieces of data stored in a record 
+
+Tables can be accessed using the following modules within the Systems Definition Application: 
+-  Dictionary: Defines every table and field in the system.
+- Tables: Contains a record of each table in the database.
+- Tables & Columns: Lists existing tables in the database.
+
+##### Table Components
+
+A table is a collection of records in the databse into which information can be entered.
+- Each record corresponds to a row in a table.
+- Each field on a record corresponds to a column on that table.
+
+- Records are identified by a 32-character, globally unique ID, called a sys_id. Record numbers are automatically incremented, and the number format per table can be changed by visiting the System Definition > Number Maintenance application.
+-  Fields store tha actual data. Availabe in types such as Choice, Date/Time, Journal, Reference, etc.
+
+##### Field Attributes
+
+Every field has 3 key attributes:
+
+- Field Label: User-friendly term which allows people to identify the field in the user interface
+- Field Name: A unique term that the system uses to identify the field. I.E. user_id.
+- Value: The actual data.
+
+
+##### Reference Fields
+
+A reference field stores a unique system identifier (known as the sys_id) of a record on another table whic is what established the reference relationship.
+When you define a reference field, the platform creates a relationship between the two tables. 
+
+Reference Fields are identified by the reference look up icon.
+
+
+#### Table Relationships
+
+###### Table relationship
+
+Tables can be related to each other in various ways
+
+- One to Many
+
+Within a table, a field can hold a reference to a record on another table. There are three one-to-many relationship fields:
+
+Reference Fields - Allows a user to select a record on a table defined by the reference field. 
+Glide List - Allows a user to select multiple records on a table defined by the glide list.
+Document ID Fields - Allow a user to select a record on any table in the instance.
+
+
+- Many to Many
+- Database Views
+- Extensions
+
+
+
+
+#### Tables Types
+
+#### Schema Map
+
+-  Schema Map: provides a graphical representation of othe tables related to specific.
+
+
+#### Overall Scenario for Course Activity
+
+#### Data Schema Overview - Activity
+
+
+
+
 
 
 
