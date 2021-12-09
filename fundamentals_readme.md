@@ -10,7 +10,7 @@
 * [Task Overview](#task-overview)
 * [Flow Designer overview](#flow-designer-overview)
 * [Content For Systems Administrators and Developers](#content-for-systems-administrators-and-developers)
-* * [Data Schema Overview](#data-schema-overview)
+    * [Data Schema Overview](#data-schema-overview)
 * [Contact](#contact)
 
 
@@ -652,26 +652,54 @@ Reference Fields are identified by the reference look up icon.
 Tables can be related to each other in various ways
 
 - One to Many
-
 Within a table, a field can hold a reference to a record on another table. There are three one-to-many relationship fields:
 
 Reference Fields - Allows a user to select a record on a table defined by the reference field. 
 Glide List - Allows a user to select multiple records on a table defined by the glide list.
 Document ID Fields - Allow a user to select a record on any table in the instance.
 
-
 - Many to Many
+Two or more tables can be related in any bi-directional reationship, so that the related records are visible from both tables in a related list.
+
 - Database Views
+Two tables can be joined virtually to allow for reporting on data that might be stored in more than one table
+
 - Extensions
-
-
-
+A table can extend another table. The extended table includes unique fields plus all of the fields and their properties from the parent table 
 
 #### Tables Types
+
+##### Extended tables
+
+
+For tables that stand alone, only the global default fields are automatically created.
+
+Extending a table incorporates all of the fields of the original table and allows for unique fields to be created on the new table. 
+
+A table that extends another table is called a child class
+The table it extends is the parent class
+
+Permission to extend
+
+A table's __Extensible__ field is used to control whether a table can be extended. 
+
+__Dictionary ocerrides__ provides the ability to define a field on a child table differently from the field on the parent table.
+If a table is exteneded but itself is not extending another table, it is called a __Base Table__. 
+The __Task__ table is such a table, making it both a base class, and a parent class.
+
+__Core__ tables are created by Service Now and provided with the base system.
+__Custom__ tables are created by you
+
 
 #### Schema Map
 
 -  Schema Map: provides a graphical representation of othe tables related to specific.
+
+##### To generate a schema map
+
+1). Navigate to __System Definition > Tables & Columns__. 
+2). In the Table name pane, __select a table__.
+3). Select __Schema map__. The schema map for the selected table opens in a seperate tab or window. 
 
 
 #### Overall Scenario for Course Activity
