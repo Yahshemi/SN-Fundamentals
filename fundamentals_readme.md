@@ -8,11 +8,11 @@
 * [Get started with lists and filters](#getting-started-with-lists-and-filters)
 * [Forms Overview](#forms-overview)
 * [Task Overview](#task-overview)
-* [Contact](#contact)
 * [Flow Designer overview](#flow-designer-overview)
 * [Virtual Agent overview](#virtual-agent-overview)
 * [Content For Systems Administrators and Developers](#content-for-systems-administrators-and-developers)
 * * [Data Schema Overview](#data-schema-overview)
+* [Contact](#contact)
 
 
 ## Now Platform overview
@@ -635,3 +635,4 @@ In some organizations you may wear all hats.
 
 ## Contact
 Created by [@Yahshemi](https://github.com/Yahshemi/) - feel free to contact me!
+
