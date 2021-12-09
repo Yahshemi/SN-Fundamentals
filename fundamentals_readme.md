@@ -12,6 +12,7 @@
 * [Flow Designer overview](#flow-designer-overview)
 * [Virtual Agent overview](#virtual-agent-overview)
 * [Content For Systems Administrators and Developers](#content-for-systems-admin-and-devs)
+* * [Tables](#tables)
 
 
 ## Now Platform overview
@@ -624,8 +625,7 @@ In some organizations you may wear all hats.
 -  Instance Stats Overview
 
 
-
-
+### Tables
 
 
 
