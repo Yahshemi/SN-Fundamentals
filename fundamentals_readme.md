@@ -717,3 +717,4 @@ __Custom__ tables are created by you
 ## Contact
 Created by [@Yahshemi](https://github.com/Yahshemi/) - feel free to contact me!
 
+[Go To Top](#now-platform-overview)
